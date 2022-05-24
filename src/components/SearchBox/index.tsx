@@ -2,7 +2,7 @@ import { SetSearchField } from 'src/types';
 import './styles.css';
 
 interface Props {
-  placeholder: string;
+  placeholder?: string;
   setSearchField: SetSearchField;
   className: string;
 }

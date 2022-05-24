@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Monster } from 'src/types';
+import { getData } from 'src/utils/general';
 import { filterMonsters } from '../../utils';
 import Card from '../Card';
 import './styles.css';
@@ -14,7 +15,7 @@ const CardList: React.FC<Props> = ({ searchField = '' }) => {
 
   useEffect(() => {
     const main = async () => {
-      const monsters: Monster[] = await (await fetch('https://jsonplaceholder.typicode.com/users')).json();
+      const monsters = await getData<Monster[]>('https://jsonplaceholder.typicode.com/users');
       setMonsters(() => monsters);
     };
     main();
