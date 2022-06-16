@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`expect to render Card Component 1`] = `
+<div
+  className="card-container"
+  key="1"
+>
+  <img
+    alt="monster Hola"
+    src="https://robohash.org/1?set=set2&size=180x180"
+  />
+  <h1>
+    Hola
+  </h1>
+  <p>
+    Hola
+  </p>
+</div>
+`;
